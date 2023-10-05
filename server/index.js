@@ -16,7 +16,8 @@ dotenv.config()
 app.use(express.json())
 const corsOptions = {
 	credentials: true,
-	origin: 'https://blogging-website-fullstack.vercel.app' // Allow requests from this specific origin
+	origin: 'https://blogging-website-fullstack.vercel.app'
+	// origin:'http://localhost:3000' 
   };
   
   app.use(cors(corsOptions)); // Use the configured CORS options

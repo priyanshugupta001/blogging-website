@@ -3,10 +3,10 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { server } from "..";
 
-import { format, formatISO9075 } from "date-fns";
+// import { format, formatISO9075 } from "date-fns";
 import extractToken from "../utils/GetToken";
 import Navbar from "../components/Navbar";
-import TextToSpeech from "../components/TextToSpeech";
+// import TextToSpeech from "../components/TextToSpeech";
 import { ToastContainer, toast } from "react-toastify";
 
 const ViewFull = () => {
@@ -76,10 +76,10 @@ const ViewFull = () => {
             </div>
           </div>
 
-          <div className="pt-10 pb-4 flex justify-center">
+          {/* <div className="pt-10 pb-4 flex justify-center">
             <TextToSpeech text={data?.content} />
             
-          </div>
+          </div> */}
         </div>
         <ToastContainer/>
       </div>
